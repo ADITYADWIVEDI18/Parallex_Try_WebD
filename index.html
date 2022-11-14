@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  </head>
+  <body>
+      <header>
+        <a href="#"></a>
+        <ul>
+            <li>Home</li>
+             <li>About</li>
+             <li>Work</li>
+             <li>Contact</li>
+        </ul>
+      </header>
+      <br><br><br>
+      <section class="type">
+        <h2 id="text"><span id='hello'>Hello I'm</span> <br>ADITYA DWIVEDI</h2>
+        <button class="btn">Explore</button>
+
+        <img src="image/bird1.png" id="bird1">
+        <img src="image/bird2.png" id="bird2">
+        <img src="image/forest.png" id="forest">
+        <img src="image/rocks.png" id="rocks">
+         <img src="image/water.png" id="water">
+      </section>
+
+     <div class="waterx" id=blue>
+       <h3>Web Development</h3>
+       <p>
+
+       </p>
+     </div>
+
+     <script>
+
+         let text=document.getElementById('text');
+         let bird1=document.getElementById('bird1');
+         let bird2=document.getElementById('bird2');
+         let btn=document.getElementById('btn');
+         let rocks=document.getElementById('rocks');
+         let forest=document.getElementById('forest');
+         let water=document.getElementById('water');
+         let header=document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+
+          let value=window.scrollY;
+
+          text.style.top=  value* .09+ '%';
+          bird1.style.top=20+value * +.10 + 'px';
+          bird1.style.right=20+value * 2.95 + 'px';
+          bird2.style.top=20+value * -.10 + 'px';
+          bird2.style.right=50+value * -3.95 + 'px';
+          rocks.style.top=value* .9+'px';
+          forest.style.top=value* -0.09+ 'px';
+          water.style.top=value* .009+ 'px';
+
+
+       })
+     </script>
+  </body>
+</html>
